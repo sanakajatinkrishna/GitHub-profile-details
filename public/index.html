@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Github Profile Graph</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Github Profile Graph</h1>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" id="username" placeholder="Enter Github username">
+      <button onclick="getUserData()">Get User Data</button>
+    </div>
+
+    <div class="user-profile">
+      <div class="profile-info">
+        <img id="profileImage" src="" alt="Profile Image">
+        <div class="user-details" id="userDetails"></div>
+      </div>
+    </div>
+
+    <div class="graph-container">
+      <h2>Contribution Graph</h2>
+      <div id="contributionGraph" class="github-calendar"></div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/github-calendar/dist/github-calendar.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
